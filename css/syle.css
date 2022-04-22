@@ -1,0 +1,137 @@
+body{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#cad0d4, #da7047);
+    height: 100vh;
+    overflow: hidden;
+   
+   
+    
+}
+
+.form{
+    width: 45%;
+    background-color: white;
+    color:black;
+    
+    padding: 15px;
+    margin-left: 30%;
+    margin-top:2%;
+}
+input,select{
+    width: 100%;
+    padding:15px 6px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #0f0f0f;
+    background-color: white;
+    color: black;
+    outline: none;
+    margin: 1% 0;
+}
+.form a{
+    color: #006699;
+}
+.form button{
+    border: 0;
+    background: none;
+    display: inline;
+    margin:  5%;
+    margin-left: 16%;
+    text-align: center;
+    border: 1px solid #302121;
+    padding: 10px 40px;
+    outline: none;
+    color: black;
+    border-radius: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+    width: 60%;
+    height: 30px;
+    padding-top: 10px;
+  }
+  .form button:hover{
+    background: #e4562b;
+  }
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #000;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+
+.sidebar a.active {
+  background-color: #006699;
+  color: black;
+}
+
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: black;
+}
+
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+.content table{
+    color: black;
+    width: 90%;
+    width: 95%;
+    margin: 2% 3% 2% 3%;
+    
+}
+.content table a{
+  text-decoration: none;
+  color: rgb(95, 240, 232);
+}
+.content table td{
+  padding: 7px;
+}
+.content fieldset{
+  color: #fff;
+
+}
+
+tr:nth-child(even) {
+  background-color: #006699;
+  color: #fff;
+  
+ 
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
